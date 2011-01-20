@@ -1,0 +1,35 @@
+=====================================
+  TODO for release 0.1:
+=====================================
+
+Must-have:
+-------------
+- Put other kinds of applications on the desktop
+- New architecture field: x86, x64, IA64, all
+
+Would-be-nice:
+-------------
+- Disk size estimation
+- More command-line options (--no-delete, --abort-on-fail)
+
+=====================================
+  Wish list for future releases:
+=====================================
+
+- Uninstall
+- Upgrade
+- Dependencies 
+    
+    These features all hinge on detecting what is currently installed, and may
+    therefore be hard to implement.
+
+- Submit function from command-line
+- Integrate windows tweaks, registry edits, shortcuts
+- Architecture selection (x86, IA64)
+- Advanced Vista support (UAC elevation)
+- Auto-update win-get itself
+- Fastest mirror selection
+- Automatically detect whether zip archive is zipped-installer or extract-to-install.
+- Install ZIP to program files (automatically creating shortcuts, adding to path if necessary)
+
+- Language files (requires dependencies)

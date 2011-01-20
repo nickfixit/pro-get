@@ -1,0 +1,111 @@
+body {
+    font-family: verdana;
+    font-size: 0.8em;
+}
+
+
+.list-entry a { 
+    color: black; 
+    text-decoration: none;
+}
+.list-entry a:hover { text-decoration: underline; }
+
+.name {
+    font-weight: bold;
+}
+
+.purpose {
+    font-size: 0.7em;
+    color: #AAA;
+}
+
+.list-entry {
+    padding: 0.3em 1em;
+    background: #E3EDFF;
+    margin: 1px;
+    border: solid 1px #CFD8EB;
+}
+
+.deleted {
+    color: #AAA !important;
+}
+
+.clear { clear: both; }
+
+.explanation {
+    width: 50em;
+    margin: 0.5em auto;
+    font-size: 0.9em;
+    background: #D3EDCE;
+    padding: 0.5em 1em;
+    border: solid 1px #C0D7BB;
+}
+
+.trusted {
+    background-image: url(star.png);
+    background-position: 98%;
+    background-repeat: no-repeat;
+}
+
+.command-box {
+    float: right;
+    width: 10em;
+    padding: 0.5em;
+    border: solid 1px black;
+    font-size: 0.8em;
+    clear: right;
+    margin: 1em 0 1em 1em;
+}
+
+.command-box a { 
+    display: block; 
+    text-decoration: none; 
+    color: black; 
+}
+a.command-button:hover {
+    background: #CCC;
+}
+div.command-button {
+    background: #DDD;
+}
+.command-button, .back-button { 
+    margin: 1px;
+    padding: 3px;
+    text-align: center;
+}
+.command-button {
+    border: solid 1px black; 
+}
+
+
+/**---------------- Message block styles -----------------------------------**/
+
+.usermessage {
+    margin: 0.5em;
+    border: solid 1px;
+    padding: 5px 10px 5px 28px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+
+    overflow: auto; /* This does not seem to have any effect but prevents the div from going behind floats */
+}
+
+.success {
+    background-color: #d2f9b4;
+    border-color: #5aaf19;
+    background-image: url(icontexto-webdev-ok-016x016.png);
+}
+
+.warning {
+    background-color: #fde8aa;
+    border-color: #dba509;
+    background-image: url(icontexto-webdev-alert-016x016.png);
+}
+
+.error {
+    background-color: #ffd4d4;
+    border-color: #c31817;
+    background-image: url(icontexto-webdev-cancel-016x016.png);
+}

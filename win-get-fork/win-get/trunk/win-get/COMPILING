@@ -1,0 +1,7 @@
+- Download and install MinGW and MSYS
+
+- Build zlib, and install.
+- Build zlib/contrib/minizip.
+- Build curl (./configure --with-zlib --enable-ipv6), and install.
+
+- You can now build win-get using the makefile.

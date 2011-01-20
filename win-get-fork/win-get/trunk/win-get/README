@@ -1,0 +1,90 @@
+----------------------------------
+
+           win-get
+      
+ An automated software installer 
+        for Windows.
+
+----------------------------------
+
+
+--------------------
+   Introduction
+--------------------
+
+Win-get can automatically install applications for you! Simply go to the
+command-line, type:
+
+    win-get install firefox
+    
+And win-get will automatically download the installer for you and run it.  It
+can even install applications silently, so you don't even have to click through
+the usual installer screens and you can just go do something else.
+
+This makes win-get also very appropriate for scripting unattended computer
+installs. Win-get offers ways to override the default software catalog, so it
+can also work in a controlled corporate network.
+
+
+--------------------
+    History
+--------------------
+
+Win-get is loosely based on the apt-get package manager for Debian Linux[1]. Of
+course, win-get does not do real package management (yet), but it does offer a
+very convenient way to install new software.
+
+Win-get is similar to another Sourceforge project called 'windows-get'[2].
+Unfortunately, the windows-get project is no longer maintained, and due to lack
+of an alternative, I started the 'win-get' project as a replacement.
+
+
+--------------------
+    Installation
+--------------------
+
+To install win-get, simply put win-get.exe somewhere on your path. Your WINDOWS
+directory will do fine. Win-get will store some of its data in your user
+profile.
+
+
+--------------------
+    Operation
+--------------------
+
+Win-get has a local database of available applications. It can periodically
+download updates of this database from a website. To do this, type 'win-get
+update'. Win-get can search multiple software catalogs from different websites,
+although currently only one default catalog is supported (the one from the
+win-get website).
+
+To add a new catalog, type `win-get update http://url.of/catalog'.
+
+After the catalog has been downloaded, you can install applications with
+
+    win-get install application
+
+Or even install them silently by using `sinstall'. Not all applications can be
+installed silently though. If silent installation is not available, a normal
+installation will be done instead.
+
+Win-get can also extract and execute installers inside ZIP files. If the
+download is a ZIP file but it does not contain an installer, the ZIP file will
+be extracted to your desktop instead.
+
+If you want to search the win-get software catalog, you can do so by
+entering:
+
+    win-get search words to search for
+
+A list of all matching applications will be shown. To get more info on a given
+application, type `win-get show application-name'.
+
+
+--------------------
+    Footnotes
+--------------------
+
+    [1] http://www.debian.org/
+
+    [2] http://windows-get.sourceforge.net/

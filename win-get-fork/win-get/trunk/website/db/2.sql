@@ -1,0 +1,1 @@
+ALTER TABLE mirror MODIFY url TEXT;

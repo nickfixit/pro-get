@@ -1,0 +1,17 @@
+ 0.1.2 (2008-10-13)
+=====================
+- FIX: Fixed a bug that caused the catalog file to be misread sometimes.
+
+ 0.1.1 (2008-10-10)
+=====================
+- FIX: Fixed a bug where win-get would crash if multiple applications were installed at once
+
+ 0.1
+=====================
+Initial release
+
+- NEW: Can download and run installers
+- NEW: Can download and extract ZIP files
+- NEW: Updates software list from a central website
+- NEW: Can run installers silently (if the switches are available)
+- NEW: Simple Vista support: gives a notice to non-administrators
